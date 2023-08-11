@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="ordenando.js"></script>
+</head>
+<body>
+    <h1>Ordenando Valores</h1><br>
+    <label for="valor">Valor</label><br>
+    <input type="int" id="valor"><br><br>
+    <button onclick="add()">Adicionar</button><br><br>
+    <select>
+        <option value="Bubble Sort">Bubble Sort</option>
+        <option value="Select Sort">Select Sort</option>
+        <option value="Quick Sort">Quick Sort</option>
+    </select><br><br>
+    <button onclick="ordenar()">Ordenar</button><button onclick="misturar()">Misturar</button>
+
+    <ul id='valores'></ul>
+
+    <script>
+    function add() {document.getElementByld("valor");
+    var node = document.createElement("li"); document.createTextNode("valor");
+    node.appendChild(valor);document.getElementByld("valores").appendChild(node);}       
+    
+        
+    function ordenar() {elemento_filho=document.getElementById("valores").children
+    var selecionar = document.getElementById("select").selectedIndex="0";
+    var filha=elemento_filho.map(bubble_sort);document.getElementByld("valores").innerHTML= filha;}
+         
+    
+    function misturar() {filho_elemento=document.getElementyByld("valores").children
+    var filho=filho_elemento.map(suffle);document.getElementByld("valores").innerHTML= filho;}
+    
+        </script>
+
+    
+</body>
+</html>

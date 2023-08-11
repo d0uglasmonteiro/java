@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style type="text/css">#box_fundo{width:1345px; height:1200px;background-color:yellow;}
+        .flex{display:flex;justify-content:center;align-items:center;flex-direction:row}</style>
+</head>
+<body>
+    <div id="box_fundo"><div class="p-3 mb-2 bg-warning text-white"><div class="container"><h1>Usuarios de Teste via REST</h1></div></div>
+    Os usuarios deste exemplo são fornecidos pela API de testes reqres.in
+    <div id="usuarios"><section class="flex"><img src="https://reqres.in/img/faces/1-image.jpg"width=300 height=300><div class="card" style="width:300px"v-for="(user,index)in users"v-bind:key="index"><div class="card-body"><p class="card-title">user first name: George <br>user last name: Bluth</p><p class="card-text">user email: george.bluth@reqres.in</p></div></div>
+    <img src="https://reqres.in/img/faces/2-image.jpg" width="300" height="300"><div class="card" style="width:300px"v-for="(user,index)in users"v-bind:key="index"><div class="card-body"><p class="card-title"></p>user first name: Janet <br>user last name: Weaver </p><p class="card-text">user email: janet.weaver@reqres.in</p></div></div>                                                                                        
+    <img src="https://reqres.in/img/faces/3-image.jpg" width="300" height="300"><div class="card" style="width:300px"v-for="(user,index)in users"v-bind:key="index"><div class="card-body"><p class="card-title">user firts name: Emma <br>user last name: Wong <br></p><p class="card-text">user email: emma.wong@reqres.in</p>  </div></div>                      
+</div></section></div>
+    
+<script src="https://unpkg.com/vue@3.0.0-rc.5/dist/vue.global.js"/>
+<script> Vue.createApp({el:#usuarios data(){return {users()}} methods:{loadUsers:{users(https://reqres.in/api/users?per_page=10)}}}).mount(#loadUsers)
+</script>
+</body>
+</html>
